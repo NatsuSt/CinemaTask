@@ -1,0 +1,23 @@
+spring:
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${Or10hmQQogB85lGFEUoR6UovoBIVdlqI}
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      platform: postgresql
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    cache: false
