@@ -2,7 +2,7 @@
     <include resource="org/springframework/boot/logging/logback/base.xml"/>
 
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>${localhost:5000}</destination> <!-- IP Logstash-сервера -->
+        <destination>${LOGSTASH_URL}</destination> <!-- IP Logstash-сервера -->
         <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
             <providers>
                 <timestamp>
