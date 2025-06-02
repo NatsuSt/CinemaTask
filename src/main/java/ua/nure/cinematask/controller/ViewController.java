@@ -48,6 +48,7 @@ public class ViewController {
         user.setRole("ROLE_USER");
 
         userRepository.save(user);
+        logger.info("New register via form");
         return "redirect:/login?registered=true";
     }
 
@@ -61,6 +62,7 @@ public class ViewController {
     @GetMapping("/home")
     public String showHome(Principal principal, Model model) {
         model.addAttribute("username", principal.getName());
+        logger.info("Show home view");
         return "home"; // templates/home.html
     }
 
