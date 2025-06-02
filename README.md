@@ -1,4 +1,5 @@
 # 🎬 Cinema REST API
+Роботу виконав Стешенко Сергій (Serhii Steshenko)
 
 > **Live demo:** [https://cinematask.onrender.com](https://cinematask.onrender.com)
 
